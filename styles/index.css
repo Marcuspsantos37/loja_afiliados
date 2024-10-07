@@ -6,6 +6,23 @@
 body {
   font-family: Roboto Regular;
 }
+body .whatsappLink {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+body .fa-whatsapp {
+  margin-top: 15px;
+}
 body header {
   background-color: #FE6332;
   box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
@@ -120,24 +137,40 @@ body #no_results {
   body {
     font-family: Roboto Regular;
   }
+  body .whatsappLink {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20%;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+  }
+  body .fa-whatsapp {
+    margin-top: 16px;
+  }
   body header {
     background-color: #FE6332;
     box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
     display: inline-flex;
     flex-wrap: wrap;
-    max-width: 200%;
+    max-width: 100%;
     padding: 10%;
     align-items: auto;
     text-align: justify;
-    padding-left: 10%;
+    padding-left: 5%;
   }
   body #logomarca {
-    max-width: 20%;
-    margin-left: -10%;
+    max-width: 40%;
   }
   body .menu {
     display: inline-flex;
-    padding-right: 51%;
+    padding-right: 10%;
     align-items: center;
   }
   body .buscador input {
