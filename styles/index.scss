@@ -1,0 +1,255 @@
+$cor_primaria: #FE6332;
+$cor_secundaria: #ffffff;
+$cor_botao: #A70000;
+$fonte_primaria: Roboto Regular;
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: $fonte_primaria; 
+    
+    header{
+        background-color: $cor_primaria;
+        box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        padding-left: 10%;
+    }
+        #logomarca{
+            max-width: 20%;
+            margin-left: -5%;
+        }
+        .menu{
+            display: flex;
+            padding-right: 51%;
+            align-items: center;
+        ;
+        }
+            .buscador input{
+                width: 190%;
+                height: 2rem;
+            }
+            
+            .buscador{
+                margin: none;
+                padding: none;
+                width: 20rem;
+                padding-left: 25%;
+            }
+                #campoBusca{
+                    text-align: center;
+                    border-radius: 16px;
+                    border-color: transparent;
+                    font-size: 14pt;
+                }
+                #pesquisar{
+                    left: 11rem;
+                }
+            #menu_list{
+                display: none;
+                list-style: none;
+                padding-left: 25%;
+                
+            }
+                .element{
+                    //display: block;
+                    margin-left: 20px;
+                    padding-left:4px;
+                    color:$cor_secundaria;
+                    font-size: 14pt;
+                    padding-top: 0rem;
+                    
+                
+                }
+                .element:hover{
+                    color: black;
+                    cursor: pointer;
+                }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 0 auto;
+        grid-gap: 0px;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-top: 2%;
+    }
+        .produtos > img{
+            max-width: 250px;
+            height: 250px;
+            object-fit: cover;
+            padding-top: 1rem;
+        }
+        .produtos:hover{
+            background-color: #fe623263;
+            box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem
+        }
+        .titulo_anuncio{
+            font-size: 14pt;
+            color: rgb(6, 6, 6);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .preco{
+            font-size: 18pt;
+        }
+        .desc{
+            font-size: 13pt;
+        }
+        .ver_oferta{
+            margin: 1rem;
+            border: none;
+            width: 25%;
+            height: 3rem;
+            color: #ffffff;
+            background-color: $cor_botao;
+            font-size: 12pt;
+        }
+        .ver_oferta:hover{
+            background-color: $cor_primaria;
+            cursor: pointer;
+            color: black;
+        }
+
+        #no_results {
+            display: none;
+            width:100rem;  
+        }
+        
+}
+@media only screen and (max-width: 500px){
+    $cor_primaria: #FE6332;
+    $cor_secundaria: #ffffff;
+    $cor_botao: #A70000;
+    $fonte_primaria: Roboto Regular;
+    
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    body{
+        font-family: $fonte_primaria;
+        
+        header{
+            background-color: $cor_primaria;
+            box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+            display: inline-flex;
+            flex-wrap: wrap;
+            max-width: 200%;
+            padding: 10%;
+            align-items: auto;
+            text-align:justify;
+            padding-left: 10%;
+        }
+            #logomarca{ 
+                max-width: 20%;
+                margin-left: -10%;
+
+                
+            }
+            .menu{
+                display: inline-flex;
+                padding-right: 51%;
+                align-items: center;
+            }
+            
+                .buscador input{
+                    width: 100%;
+                    height: 2rem;
+                }
+                .buscador{
+                    margin: none;
+                    padding: none;
+                    width: 20rem;
+                    padding-left: 3%;
+                }
+                    #campoBusca{
+                        text-align: center;
+                        border-radius: 16px;
+                        border-color: transparent;
+                        font-size: 14pt;
+                    }
+                    #pesquisar{
+                        left: 11rem;
+                    }
+                #menu_list{
+                    display: none;
+                    list-style: none;
+                    padding-left: 0%;
+                    font-size: 1pt;
+                }
+                    .element{
+                        //display: block;
+                        margin-left: 20px;
+                        padding-left:4px;
+                        color:$cor_secundaria;
+                        font-size: 14pt;
+                        padding-top: 0rem;
+                    }
+                    .element:hover{
+                        color: black;
+                        cursor: pointer;
+                    }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin: 0 auto;
+            grid-gap: 0px;
+            max-width: 95%;
+            align-items: center;
+            text-align: center;
+            padding-top: 2%;
+        }
+            .produtos > img{
+                max-width: 90%;
+                width: auto;
+                height: 200px;
+                object-fit: cover;
+                padding-top: 1rem;
+            }
+            .produtos:hover{
+                background-color: silver;
+                border-color: #FE6332;
+                box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem
+            }
+            .titulo_anuncio{
+                font-size: 10pt;
+                color: rgb(6, 6, 6);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .preco{
+                font-size: 18pt;
+            }
+            .desc{
+                font-size: 13pt;
+            }
+            .ver_oferta{
+                margin: 1rem;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                color: #ffffff;
+                background-color: $cor_botao;
+                font-size: 12pt;
+            }
+            .ver_oferta:hover{
+                background-color: $cor_primaria;
+                cursor: pointer;
+                color: black;
+            }
+    
+            #no_results {
+                display: none;
+                width:100rem;  
+            }
+            
+    }
+
+}

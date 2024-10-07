@@ -1,0 +1,231 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: Roboto Regular;
+}
+body header {
+  background-color: #FE6332;
+  box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  padding-left: 10%;
+}
+body #logomarca {
+  max-width: 20%;
+  margin-left: -5%;
+}
+body .menu {
+  display: flex;
+  padding-right: 51%;
+  align-items: center;
+}
+body .buscador input {
+  width: 190%;
+  height: 2rem;
+}
+body .buscador {
+  margin: none;
+  padding: none;
+  width: 20rem;
+  padding-left: 25%;
+}
+body #campoBusca {
+  text-align: center;
+  border-radius: 16px;
+  border-color: transparent;
+  font-size: 14pt;
+}
+body #pesquisar {
+  left: 11rem;
+}
+body #menu_list {
+  display: none;
+  list-style: none;
+  padding-left: 25%;
+}
+body .element {
+  margin-left: 20px;
+  padding-left: 4px;
+  color: #ffffff;
+  font-size: 14pt;
+  padding-top: 0rem;
+}
+body .element:hover {
+  color: black;
+  cursor: pointer;
+}
+body .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  grid-gap: 0px;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+body .produtos > img {
+  max-width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 1rem;
+}
+body .produtos:hover {
+  background-color: rgba(254, 98, 50, 0.3882352941);
+  box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+}
+body .titulo_anuncio {
+  font-size: 14pt;
+  color: rgb(6, 6, 6);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .preco {
+  font-size: 18pt;
+}
+body .desc {
+  font-size: 13pt;
+}
+body .ver_oferta {
+  margin: 1rem;
+  border: none;
+  width: 25%;
+  height: 3rem;
+  color: #ffffff;
+  background-color: #A70000;
+  font-size: 12pt;
+}
+body .ver_oferta:hover {
+  background-color: #FE6332;
+  cursor: pointer;
+  color: black;
+}
+body #no_results {
+  display: none;
+  width: 100rem;
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    padding: 0%;
+    margin: 0%;
+  }
+  body {
+    font-family: Roboto Regular;
+  }
+  body header {
+    background-color: #FE6332;
+    box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 200%;
+    padding: 10%;
+    align-items: auto;
+    text-align: justify;
+    padding-left: 10%;
+  }
+  body #logomarca {
+    max-width: 20%;
+    margin-left: -10%;
+  }
+  body .menu {
+    display: inline-flex;
+    padding-right: 51%;
+    align-items: center;
+  }
+  body .buscador input {
+    width: 100%;
+    height: 2rem;
+  }
+  body .buscador {
+    margin: none;
+    padding: none;
+    width: 20rem;
+    padding-left: 3%;
+  }
+  body #campoBusca {
+    text-align: center;
+    border-radius: 16px;
+    border-color: transparent;
+    font-size: 14pt;
+  }
+  body #pesquisar {
+    left: 11rem;
+  }
+  body #menu_list {
+    display: none;
+    list-style: none;
+    padding-left: 0%;
+    font-size: 1pt;
+  }
+  body .element {
+    margin-left: 20px;
+    padding-left: 4px;
+    color: #ffffff;
+    font-size: 14pt;
+    padding-top: 0rem;
+  }
+  body .element:hover {
+    color: black;
+    cursor: pointer;
+  }
+  body .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-gap: 0px;
+    max-width: 95%;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+  }
+  body .produtos > img {
+    max-width: 90%;
+    width: auto;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 1rem;
+  }
+  body .produtos:hover {
+    background-color: silver;
+    border-color: #FE6332;
+    box-shadow: rgba(0, 0, 0, 0.123) 0rem 1rem 1rem;
+  }
+  body .titulo_anuncio {
+    font-size: 10pt;
+    color: rgb(6, 6, 6);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body .preco {
+    font-size: 18pt;
+  }
+  body .desc {
+    font-size: 13pt;
+  }
+  body .ver_oferta {
+    margin: 1rem;
+    border: none;
+    width: 50%;
+    height: 3rem;
+    color: #ffffff;
+    background-color: #A70000;
+    font-size: 12pt;
+  }
+  body .ver_oferta:hover {
+    background-color: #FE6332;
+    cursor: pointer;
+    color: black;
+  }
+  body #no_results {
+    display: none;
+    width: 100rem;
+  }
+}/*# sourceMappingURL=index.css.map */
